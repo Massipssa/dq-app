@@ -13,11 +13,14 @@ import Error503Page from './pages/authentication/503';
 
 import SignInPage from './pages/authentication/sign-in';
 import SignUpPage from './pages/authentication/sign-up';
-import MembersPage from './pages/tables/members';
-import VirtualizedTablePage from './pages/tables/virtualized';
+import DatasourcePage from './pages/tables/datasources';
+
+// catalog 
+import CatalogTable from './pages/tables/catalog';
+import CreateCatalogForm from './pages/forms/catalog/CreateCatalogForm'
+
 import FormBasicPage from './pages/forms/basic';
 import FormWizardPage from './pages/forms/wizard';
-import CalendarPage from './pages/calendar';
 import { appNavs } from './config';
 
 const App = () => {
@@ -28,17 +31,24 @@ const App = () => {
           <Route path="/" element={<Frame navs={appNavs} />}>
             <Route index element={<DashboardPage />} />
             <Route path="dashboard" element={<DashboardPage />} />
-            <Route path="table-members" element={<MembersPage />} />
-            <Route path="table-virtualized" element={<VirtualizedTablePage />} />
+            <Route path="datasources" element={<DatasourcePage />} />
+            
+            {/**Catalog */}
+            <Route path="catalogs" element={<CatalogTable />} />
+            <Route path="add-catalog" element={<CreateCatalogForm />} />
+            
+            {/**Errors */}
             <Route path="error-404" element={<Error404Page />} />
             <Route path="error-403" element={<Error403Page />} />
             <Route path="error-500" element={<Error500Page />} />
             <Route path="error-503" element={<Error503Page />} />
             <Route path="sign-in" element={<SignInPage />} />
             <Route path="sign-up" element={<SignUpPage />} />
+
             <Route path="form-basic" element={<FormBasicPage />} />
             <Route path="form-wizard" element={<FormWizardPage />} />
-            <Route path="calendar" element={<CalendarPage />} />
+            
+            {/**<Route path="calendar" element={<CalendarPage />} /> */}
           </Route>
           <Route path="*" element={<Error404Page />} />
         </Routes>

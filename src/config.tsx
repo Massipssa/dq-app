@@ -11,35 +11,33 @@ export const appNavs = [
     title: 'Dashboard',
     to: '/dashboard'
   },
+
   {
-    eventKey: 'calendar',
-    icon: <Icon as={VscCalendar} />,
-    title: 'Calendar',
-    to: '/calendar'
-  },
-  {
-    eventKey: 'tables',
+    eventKey: 'datasources',
     icon: <Icon as={VscTable} />,
-    title: 'Tables',
-    to: '/table-members',
+    title: 'Workspaces',
+    to: '/datasources'
+    /*
     children: [
       {
-        eventKey: 'members',
-        title: 'Members',
-        to: '/table-members'
+        eventKey: 'datasources',
+        title: 'Datasource',
+        to: '/datasources'
       },
       {
-        eventKey: 'virtualized',
-        title: 'Virtualized Table',
-        to: '/table-virtualized'
+        eventKey: 'connections',
+        title: 'Catalogs',
+        to: '/catalogs'
       }
     ]
+    */
   },
   {
     eventKey: 'forms',
     icon: <Icon as={MdModeEditOutline} />,
-    title: 'Forms',
-    to: '/form-basic',
+    title: 'Courses',
+    to: '/form-basic'
+    /*,
     children: [
       {
         eventKey: 'form-basic',
@@ -52,11 +50,14 @@ export const appNavs = [
         to: '/form-wizard'
       }
     ]
+    */
   },
+  
   {
-    eventKey: 'authentication',
-    title: 'Authentication',
+    eventKey: 'projects',
+    title: 'Projects',
     icon: <Icon as={MdFingerprint} />,
+    /*
     children: [
       {
         eventKey: 'sign-in',
@@ -90,8 +91,9 @@ export const appNavs = [
         to: '/error-503'
       }
     ]
+    */
   },
-
+/*
   {
     eventKey: 'components',
     title: 'Components',
@@ -99,4 +101,5 @@ export const appNavs = [
     href: 'https://rsuitejs.com/components/overview/',
     target: '_blank'
   }
+  */
 ];

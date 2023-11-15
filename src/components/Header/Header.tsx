@@ -15,7 +15,6 @@ import NoticeIcon from '@rsuite/icons/Notice';
 import GearIcon from '@rsuite/icons/Gear';
 import HelpOutlineIcon from '@rsuite/icons/HelpOutline';
 import GithubIcon from '@rsuite/icons/legacy/Github';
-import HeartIcon from '@rsuite/icons/legacy/HeartO';
 
 const renderAdminSpeaker = ({ onClose, left, top, className }: any, ref) => {
   const handleSelect = eventKey => {
@@ -119,14 +118,16 @@ const Header = () => {
 
   return (
     <Stack className="header" spacing={8}>
+      {/** 
       <IconButton
         icon={<HeartIcon style={{ fontSize: 20 }} color="red" />}
         href="https://opencollective.com/rsuite"
         target="_blank"
       />
+      */}
       <IconButton
         icon={<GithubIcon style={{ fontSize: 20 }} />}
-        href="https://github.com/rsuite/rsuite-admin-template"
+        href="https://github.com/Massipssa/dq-app"
         target="_blank"
       />
 
@@ -148,8 +149,8 @@ const Header = () => {
         <Avatar
           size="sm"
           circle
-          src="https://avatars.githubusercontent.com/u/1203827"
-          alt="@simonguo"
+          src="https://avatars.githubusercontent.com/u/23151504"
+          alt="@massipssa"
           style={{ marginLeft: 8 }}
         />
       </Whisper>

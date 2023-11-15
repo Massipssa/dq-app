@@ -33,25 +33,28 @@ const Dashboard = () => {
   return (
     <>
       <Row gutter={30} className="dashboard-header">
+
         <Col xs={8}>
-          <Panel className="trend-box bg-gradient-red">
-            <img className="chart-img" src={images.PVIcon} />
-            <div className="title">Page Views </div>
-            <div className="value">281,358</div>
+          <Panel className="trend-box bg-gradient-blue">
+            {/** <img className="chart-img" src={images.UVIcon} /> */}
+            <div className="title">Datasources</div>
+            <div className="value">25</div>
           </Panel>
         </Col>
+        
         <Col xs={8}>
           <Panel className="trend-box bg-gradient-green">
-            <img className="chart-img" src={images.VVICon} />
-            <div className="title">Visits </div>
+            {/**<img className="chart-img" src={images.VVICon} /> */}
+            <div className="title">Succeded Checks</div>
             <div className="value">251,901</div>
           </Panel>
         </Col>
+
         <Col xs={8}>
-          <Panel className="trend-box bg-gradient-blue">
-            <img className="chart-img" src={images.UVIcon} />
-            <div className="title">Unique Visitors</div>
-            <div className="value">25,135</div>
+          <Panel className="trend-box bg-gradient-red">
+            {/**<img className="chart-img" src={images.PVIcon} /> */}
+            <div className="title">Failed checks</div>
+            <div className="value">10</div>
           </Panel>
         </Col>
       </Row>

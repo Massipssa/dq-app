@@ -29,6 +29,3 @@ It's serving at http://127.0.0.1:3100/ by default.
 npm run dev
 ```
 
-## License
-
-MIT © [simonguo](https://github.com/simonguo)
